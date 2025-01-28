@@ -25,6 +25,7 @@ public class JustApp {
             System.out.println(item);
 
         }
+
         //Find the total cost of the whole order
     }
 }
