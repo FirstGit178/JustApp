@@ -1,4 +1,4 @@
-package ie.atu;
+package ie.atu.Sem2Week2;
 
 public class Fries implements Food{
     String name;
@@ -6,6 +6,12 @@ public class Fries implements Food{
     double price;
 
     String description;
+
+    public Fries(String name, double price, String description) {
+        this.name = name;
+        this.price = price;
+        this.description = description;
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -33,6 +39,16 @@ public class Fries implements Food{
     public String getDescription() {
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "Fries{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                '}';
+    }
+
     public void addSalt()
     {
 

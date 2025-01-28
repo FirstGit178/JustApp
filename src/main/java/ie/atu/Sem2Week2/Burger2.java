@@ -1,12 +1,17 @@
-package ie.atu;
+package ie.atu.Sem2Week2;
 
-public class Pizza implements Food {
-
+public class Burger2 {
     String name;
 
-    double price:
+    double price;
 
     String description;
+
+    public Burger2(String name, double price, String description) {
+        this.name = name;
+        this.price = price;
+        this.description = description;
+    }
 
     public String getName() {
         return name;
@@ -30,13 +35,5 @@ public class Pizza implements Food {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public Pizza(String name, double price, String description) {
-        this.name = name;
-        this.price = price;
-        this.description = description;
-
-
     }
 }
