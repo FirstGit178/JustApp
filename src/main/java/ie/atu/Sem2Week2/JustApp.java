@@ -1,5 +1,6 @@
 package ie.atu.Sem2Week2;
 
+import javax.swing.*;
 import java.util.ArrayList;
 
 public class JustApp {
@@ -14,6 +15,7 @@ public class JustApp {
         Pizza tuna = new Pizza("Tuna", 7.99 , "Nice??? Mmmm... We will see");
         Pizza classic = new Pizza("Pineapple" , 5.99 , "Nice");
         Fries curry = new Fries("curry", 1.99,  "Also nice");
+
         //Add all the orders to a collection
         items.add(cheeseBurger);
         items.add(tuna);
@@ -23,9 +25,14 @@ public class JustApp {
         for(Food item : items)
         {
             System.out.println(item);
-
         }
 
         //Find the total cost of the whole order
+        double totalCost = 0;
+        for (Food menuItem : items)
+        {
+            totalCost += menuItem.getPrice();
+        }
+            System.out.println("Total Cost: € " + totalCost);
     }
 }
